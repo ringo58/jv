@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <form id="form">
+        <input type="text" placeholder="correo" name="mails[]">
+    </form>
+    <button id="btn">crear</button>
+    <script>
+        $("#btn").addEventListener("click", function() {
+            var input = document.createElement("input");
+            input.setAttribute("type", "email");
+            input.setAttribute("placeholder", "correo");
+            input.setAttribute("name", "mails");
+            $("#form").appendChild(input);
+            alert("se agrego un nuevo campo");
+            console.log(input)
+        })
+
+        function alert(msg) {
+            var div = document.createElement("div");
+            div.setAttribute("class", "alert");
+            div.innerHTML = msg;
+            $("body").insertBefore(div, $("body").firstChild);
+
+        }
+
+        function $(selector) {
+            return document.querySelector(selector);
+        }
+    </script>
+</body>
+
+</html>

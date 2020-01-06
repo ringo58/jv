@@ -1,0 +1,36 @@
+<html>
+
+<head>
+    <style>
+        .clase {
+            background-color: green;
+            padding: 10px;
+        }
+    </style>
+    <script>
+        function click() {
+            alert("lmao");
+            arreglo.push("8")
+            console.log(arreglo.length)
+        }
+        window.onload = function() {
+            var div = document.getElementById("londo").classList.add('clase');
+
+
+            document.getElementById("boton").addEventListener("click", click);
+        }
+        var arreglo = [2, 10, 5, 6, 23];
+        console.log(arreglo.length)
+        arreglo.sort();
+        console.log(arreglo);
+    </script>
+</head>
+
+<body>
+    <div id="londo">
+        lmao
+    </div>
+    <button id="boton"></button>
+</body>
+
+</html>

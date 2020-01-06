@@ -1,0 +1,74 @@
+<html>
+
+<head>
+
+
+</head>
+
+<body>
+    <script>
+        //alert("hello fucko");
+        var variable;
+        variable = "kono based da";
+        var numero = 58;
+        console.log(numero);
+        var a = 3;
+        console.log(numero + 15);
+        console.log(numero + a);
+        a++;
+        var nopar = "no es par, trozo de mierda";
+
+        function es_par(numero) {
+            if (numero % 2 == 0) {
+                console.log("es par, hijo de la chingada");
+            } else {
+                console.log("no es par, trozo de mierda");
+            }
+        }
+        if (variable.indexOf("based") != -1) {
+            console.log("really based");
+        }
+        document.querySelector("body").innerHTML = "lmao boy " + variable;
+        console.log(nopar.length + " based");
+        console.log(variable.toUpperCase());
+        var contador = 0;
+        do {
+            contador++;
+            console.log("ayuwoki");
+        } while (contador < 10);
+        for (var i = 0; i < 30; i++) {
+            console.log(i + "perros");
+        }
+        hello = null;
+
+        if (typeof hello == "undefined") {
+            console.log("this shit is fake as fuck");
+        } else if (hello == null) {
+            console.log("not have any shit");
+        }
+        var mensaje = "guess you fag";
+        var max = 100;
+        var min = 1;
+        var numero_secreto = Math.random() * (max - min) + min;
+        numero_secreto = parseInt(numero_secreto);
+        while (true) {
+            var numero_adivinado = prompt(mensaje, "0");
+            numero_adivinado = parseInt(numero_adivinado);
+            if (numero_adivinado === numero_secreto) {
+                alert("you did it");
+                break;
+            } else if (numero_adivinado > numero_secreto) {
+                mensaje = "muy alto";
+            } else if (numero_adivinado < numero_secreto) {
+                mensaje = "muy bajo";
+            } else if (numero_adivinado === 0) {
+                break;
+            }
+        }
+    </script>
+    <p id="lmao" onclick="es_par(21)">aqui</p>
+
+    <p>type that shit</p>
+</body>
+
+</html>
